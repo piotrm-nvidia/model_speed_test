@@ -26,7 +26,7 @@ bert_config = {
     ]
 }
 
-model_dir = "/var/log/tfs-publish/triton-qp-intent-classification/served_models/triton_qp_intent_classification/1706252719442/"
+model_dir = "/home/piotrm/src/private-notes/2024/02/22/tiny_classify_bert"
 
 # 超参数
 max_length = bert_config["max_length"]

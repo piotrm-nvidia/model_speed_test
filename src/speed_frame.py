@@ -66,8 +66,8 @@ class speed_frame():
 
         cost = time.time() - t1
         self.muti_time_cost.append(cost)
-        if self.log_t:
-            self.logger_detail.info(f't={cost:.3f} w={self.max_workers} q={q} r={r}')
+        #if self.log_t:
+        #    self.logger_detail.info(f't={cost:.3f} w={self.max_workers} q={q} r={r}')
         # self.logger_detail.flush()
         return r
 
@@ -106,7 +106,7 @@ class speed_frame():
         # self.logger_summary.info(f"muti_all_cost={self.muti_all_cost}")
         # self.logger_summary.info(f"muti_time_cost={self.muti_time_cost}")
         self.summary_info.append(r)
-        self.logger_summary.info(r)
+        #self.logger_summary.info(r)
 
     def run(self, max_worker_list):
         # max_worker_list = [1, 2, 3, 5, 10 ,20]

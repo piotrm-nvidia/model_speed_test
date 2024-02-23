@@ -15,8 +15,8 @@ def make_request(q, fist_time_cost):
             }
         ]
     }
-    res = requests.post(url="http://192.168.41.213:8380/v2/models/BERT/infer", json=d).json()
-    print(res)
+    res = requests.post(url="http://localhost:8380/v2/models/BERT/infer", json=d).json()
+    #print(res)
     r = res["outputs"][0]["data"][0]
     return r
 
